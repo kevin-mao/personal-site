@@ -2,13 +2,13 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import data from '../../data/contact';
+import contactInfo from '../data/contact';
 
 const ContactIcons = () => (
   <ul className="icons">
-    {data.map((s) => (
+    {contactInfo.map((s) => (
       <li key={s.label}>
-        <a href={s.link} aria-label={s.label}>
+        <a href={s.link} aria-label={s.label} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={s.icon} />
         </a>
       </li>
