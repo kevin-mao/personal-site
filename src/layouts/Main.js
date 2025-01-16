@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-closing-tag-location */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -19,11 +20,14 @@ const Main = (props) => (
       {props.title && <title>{props.title}</title>}
       <meta name="description" content={props.description} />
     </Helmet>
-    <div id="wrapper">
-      <Navigation />
-      <div id="main">{props.children}</div>
-      {props.fullPage ? null : <SideBar />}
-    </div>
+    {props.fullPage
+      ? <>
+        {(props.typingDone || !props.landingPage) && <Navigation />}{props.children} </>
+      : <div id="wrapper">
+        <Navigation />
+        <div id="main">{props.children}</div>
+        <SideBar />
+      </div>}
   </HelmetProvider>
 );
 
@@ -35,6 +39,8 @@ Main.propTypes = {
   fullPage: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
+  typingDone: PropTypes.bool,
+  landingPage: PropTypes.bool,
 };
 
 Main.defaultProps = {
@@ -42,6 +48,8 @@ Main.defaultProps = {
   fullPage: false,
   title: null,
   description: "Kevin Mao's personal website.",
+  typingDone: false,
+  landingPage: false,
 };
 
 export default Main;

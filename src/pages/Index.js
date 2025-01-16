@@ -1,35 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+/* eslint-disable react/jsx-closing-tag-location */
+import React, { useState } from 'react';
 
 import Main from '../layouts/Main';
+import Typewriter from '../components/Typewriter';
+import Blurb from '../components/Blurb';
 
-const Index = () => (
-  <Main
-    description={
+const Index = () => {
+  const [typingDone, setTypingDone] = useState(false);
+
+  return (
+    <Main
+      description={
       "Kevin Mao's personal website. New York based Stanford ICME graduate, "
       + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
     }
-  >
-    <article className="post" id="index">
-      <header>
-        <div className="title">
-          <h2>
-            <Link to="/">About this site</Link>
-          </h2>
-          <p>
-            A beautiful, responsive, statically-generated, react application
-            written with modern Javascript.
-          </p>
+      typingDone={typingDone}
+      landingPage
+      fullPage
+    >
+      <section id="landing">
+        <div className="center">
+          <Typewriter text="Hi there.      I'm Kevin Mao." delay={75} onTypingDone={() => setTypingDone(true)} />
+          <Blurb hideTitle />
         </div>
-      </header>
-      <p>
-        {' '}
-        Welcome to my website. Please feel free to read more{' '}
-        <Link to="/about">about me</Link>, <Link to="/projects">projects</Link>, or{' '}
-        contact me.
-      </p>
-    </article>
-  </Main>
-);
+      </section>
+    </Main>);
+};
 
 export default Index;

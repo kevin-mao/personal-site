@@ -34,6 +34,10 @@
   )
 );
 
+#root {
+  height: 100%;
+}
+
 // Base.
 
 @import "base/page";
@@ -67,3 +71,4 @@
 @import "layout/menu";
 
 @import "pages/notFound";
+@import "pages/landing";

@@ -2,7 +2,7 @@ const routes = [
   {
     index: true,
     label: 'Kevin Mao',
-    path: '/',
+    path: '/home',
   },
   {
     label: 'About',
