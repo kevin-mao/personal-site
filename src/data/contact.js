@@ -1,7 +1,7 @@
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
-import { faFilePdf } from '@fortawesome/free-regular-svg-icons/faFilePdf';
+import { faFileText } from '@fortawesome/free-regular-svg-icons/faFileText';
 // See https://fontawesome.com/icons?d=gallery&s=brands,regular&m=free
 // to add other icons.
 
@@ -24,7 +24,7 @@ const contactInfo = [
   {
     link: `${process.env.PUBLIC_URL}/kevin-mao.pdf`,
     label: 'Resume',
-    icon: faFilePdf,
+    icon: faFileText,
   },
 ];
 

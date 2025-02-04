@@ -14,6 +14,7 @@ const Home = () => (
   >
     <section id="landing">
       <div className="center">
+        <h2>Hi there. I&apos;m Kevin Mao.</h2>
         <Blurb />
       </div>
     </section>

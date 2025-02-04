@@ -22,15 +22,13 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Kevin. I am a{' '}
-        <a href="https://www.engineering.columbia.edu/">Columbia Engineering </a> graduate, Columbia Startup Lab
-        alumnus, and a Software Engineer at Microosft.
+        Hi, I&apos;m Kevin. I am a Columbia Engineering graduate, Columbia Startup Lab alumnus,
+        and currently I am a Software Engineer II at Microsoft, where I work on
+        Azure Event Grid.
       </p>
       <ul className="actions">
         <li>
-          <Link to="/about" className="button">
-            Learn More
-          </Link>
+          <a href={`${process.env.PUBLIC_URL}/kevin-mao.pdf`} target="_blank" rel="noreferrer" className="button"> View Resume </a>
         </li>
       </ul>
     </section>

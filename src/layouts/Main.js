@@ -45,7 +45,7 @@ Main.propTypes = {
 
 Main.defaultProps = {
   children: null,
-  fullPage: false,
+  fullPage: true,
   title: null,
   description: "Kevin Mao's personal website.",
   typingDone: false,
