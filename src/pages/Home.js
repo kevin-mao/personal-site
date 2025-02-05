@@ -6,10 +6,7 @@ import Blurb from '../components/Blurb';
 
 const Home = () => (
   <Main
-    description={
-      "Kevin Mao's personal website. New York based Stanford ICME graduate, "
-      + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
-    }
+    description="Kevin Mao's personal website."
     fullPage
   >
     <section id="landing">

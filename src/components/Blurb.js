@@ -22,10 +22,16 @@ const Blurb = () => (
               </p>
             </header>
             <section className="blurb">
-              <p>
+              <p style={{ marginBottom: '1em' }}>
                 I am a Columbia Engineering graduate, Columbia Startup Lab alumnus,
-                and currently I am a Software Engineer II at Microsoft, where I work on
-                Azure Event Grid, Microsoft&apos;s premier pub/sub messaging cloud service.
+                and a Software Engineer II at Microsoft, where I work on
+                Azure Event Grid, Microsoft&apos;s premier pub/sub messaging service.
+              </p>
+              <p>
+                I have industry experience in backend and cloud engineering but I love
+                tinkering and building, so I&apos;ve accrued various experiences from
+                fullstack engineering to applied machine learning through various
+                projects and ventures!
               </p>
               <ul className="actions">
                 <li>

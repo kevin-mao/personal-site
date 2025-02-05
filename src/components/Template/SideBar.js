@@ -22,9 +22,9 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Kevin. I am a Columbia Engineering graduate, Columbia Startup Lab alumnus,
-        and currently I am a Software Engineer II at Microsoft, where I work on
-        Azure Event Grid.
+        I am a Columbia Engineering graduate, Columbia Startup Lab alumnus, and
+        a Software Engineer II at Microsoft, where I work on Azure Event Grid,
+        Microsoft&apos;s premier pub/sub messaging service.
       </p>
       <ul className="actions">
         <li>
