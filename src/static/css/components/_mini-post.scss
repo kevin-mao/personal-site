@@ -9,7 +9,6 @@
   position: relative;
 
   .description {
-    position: absolute;
     padding: 0;
     bottom: 0;
     border-top: solid 1px _palette(border);
@@ -52,8 +51,7 @@
     width: 100%;
 
     img {
-      @include vendor(
-        "transition",
+      @include vendor("transition",
         "transform #{_duration(transition)} ease-out"
       );
       width: 100%;
@@ -97,12 +95,13 @@
 
 .mini-posts {
   margin: 0 0 _size(element-margin);
+
   @include breakpoint(large) {
     @include vendor("display", "flex");
     @include vendor("flex-wrap", "wrap");
     width: calc(100% + #{_size(element-margin)});
 
-    > * {
+    >* {
       margin: _size(element-margin) _size(element-margin) 0 0;
       width: calc(50% - #{_size(element-margin)});
     }
@@ -111,11 +110,12 @@
       margin-top: 0;
     }
   }
+
   @include breakpoint(xsmall) {
     display: block;
     width: 100%;
 
-    > * {
+    >* {
       margin: 0 0 _size(element-margin);
       width: 100%;
     }
