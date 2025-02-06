@@ -4,6 +4,10 @@
   align-items: center;
   height: 100%;
 
+  @include breakpoint(small) {
+    height: auto
+  }
+
   .center {
     display: inline-block;
     float: none;
