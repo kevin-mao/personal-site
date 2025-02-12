@@ -8,6 +8,7 @@ const Home = () => (
   <Main
     description="Kevin Mao's personal website."
     fullPage
+    landingPage={false}
   >
     <section id="landing">
       <div className="center">

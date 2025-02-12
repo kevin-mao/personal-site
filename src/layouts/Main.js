@@ -49,7 +49,7 @@ Main.defaultProps = {
   title: null,
   description: "Kevin Mao's personal website.",
   typingDone: false,
-  landingPage: false,
+  landingPage: true,
 };
 
 export default Main;
