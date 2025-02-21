@@ -1,14 +1,14 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React from 'react';
 
-import Main from '../layouts/Main';
+import LandingMain from '../layouts/LandingMain';
 import Blurb from '../components/Blurb';
 
 const Home = () => (
-  <Main
+  <LandingMain
     description="Kevin Mao's personal website."
     fullPage
-    landingPage={false}
+    typingDone
   >
     <section id="landing">
       <div className="center">
@@ -16,6 +16,6 @@ const Home = () => (
         <Blurb />
       </div>
     </section>
-  </Main>);
+  </LandingMain>);
 
 export default Home;

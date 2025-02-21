@@ -21,7 +21,7 @@ const About = () => {
     .filter((s) => s.length).length;
 
   return (
-    <Main title="About" description="Learn about Kevin Mao" fullPage={false} landingPage={false}>
+    <Main title="About" description="Learn about Kevin Mao">
       <article className="post markdown" id="about">
         <header>
           <div className="title">
